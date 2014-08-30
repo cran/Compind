@@ -1,0 +1,19 @@
+exportPattern("^[[:alpha:]]+")
+
+#import(Benchmarking)
+importFrom(Benchmarking, dea)
+#import(psych)
+importFrom(psych, principal)
+importFrom(psych, geometric.mean)
+#import(boot)
+importFrom(boot, boot)
+importFrom(boot, boot.ci)
+
+importFrom(nonparaeff, orderm)
+importFrom(nonparaeff, ar.dual.dea)
+
+import(Hmisc)
+import(MASS)
+import(GPArotation)
+import(lpSolve)
+

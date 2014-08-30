@@ -1,0 +1,39 @@
+\name{ci_factor}
+\alias{ci_factor}
+\title{Weighting method based on Factor Analysis}
+
+\description{Factor analysis groups together collinear simple indicators to estimate a composite indicator that captures as much as possible of the information common to individual indicators.}
+
+\usage{
+ci_factor(x,indic_col,method="ONE")
+}
+
+\arguments{
+  \item{x}{A data.frame containing score of the simple indicators.}
+  \item{indic_col}{Simple indicators column number.}
+  \item{method}{If method = "ONE" (default) the composite indicator estimated values are equal to first component scores, if method = "ALL" the composite indicator estimated values are equal to component score multiplied by its proportion variance.}
+}
+
+\value{An object of class "CI". This is a list containing the following elements:
+  \item{ci_factor_est}{Composite indicator estimated values.}
+  \item{loadings_fact}{Variance explained by principal factors (in percentage terms).}
+  \item{ci_method}{Method used; for this function ci_method="factor".}
+}
+
+\references{OECD, \emph{Handbook on constructing composite indicators: methodology and user guide}, 2008}
+
+\author{
+  Vidoli F.
+}
+
+\seealso{ \code{\link{ci_bod}}, \code{\link{ci_mpi}}}
+
+\examples{
+i1 <- seq(0.3, 0.5, len = 100) - rnorm (100, 0.2, 0.03)
+i2 <- seq(0.3, 1, len = 100)   - rnorm (100, 0.2, 0.03)
+Indic = data.frame(i1, i2)
+CI = ci_factor(Indic)
+
+data(EU_NUTS1)
+CI = ci_factor(EU_NUTS1,c(2:3), method="ALL")
+}
