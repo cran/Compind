@@ -10,7 +10,7 @@
   \item{x}{A data.frame containing score of the simple indicators.}
   \item{indic_col}{Simple indicators column number.}
   \item{M}{The number of elements in each of the bootstrapped samples.}
-  \item{B}{The number of bootstap replicates.}
+  \item{B}{The number of bootstrap replicates.}
   
 }
 

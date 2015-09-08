@@ -16,4 +16,5 @@ import(Hmisc)
 import(MASS)
 import(GPArotation)
 import(lpSolve)
+importFrom("stats", "var")
 

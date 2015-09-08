@@ -1,4 +1,4 @@
-ci_factor <- function(x,indic_col, method="ONE")
+ci_factor <- function(x,indic_col, method="ONE", dim=3)
 {
 #   library(psych)
 #   library(GPArotation)
@@ -31,11 +31,10 @@ ci_factor <- function(x,indic_col, method="ONE")
   
   if (method=="ONE") 
   {
-    fit <- psych::principal(x_num, nfactors = 1,scores=TRUE)
-    ci_factor_est =fit$scores
-    fit_tot <- psych::principal(x_num, nfactors = n_indic, scores=TRUE)
-    pesi_fatt = as.matrix(colSums(fit_tot$loading*fit_tot$loading)/dim(fit_tot$loading))
-
+    fit <- psych::principal(x_num, nfactors = n_indic, scores=TRUE)
+    pesi_fatt = as.matrix(colSums(fit$loading*fit$loading)/n_indic) 
+    fit$scores = fit$scores[,1]
+    ci_factor_est = fit$scores
     r<-list(ci_factor_est=ci_factor_est, loadings_fact=pesi_fatt, ci_method="factor")
     r$call<-match.call()
     class(r)<-"CI"
@@ -45,7 +44,7 @@ ci_factor <- function(x,indic_col, method="ONE")
   if (method=="ALL") 
   {
     fit <- psych::principal(x_num, nfactors = n_indic, scores=TRUE)
-    pesi_fatt = as.matrix(colSums(fit$loading*fit$loading)/dim(fit$loading))    
+    pesi_fatt = as.matrix(colSums(fit$loading*fit$loading)/n_indic)    
     ci_factor_est = fit$scores %*% pesi_fatt
 
     r<-list(ci_factor_est=ci_factor_est, loadings_fact=pesi_fatt, ci_method="factor")
@@ -53,7 +52,19 @@ ci_factor <- function(x,indic_col, method="ONE")
     class(r)<-"CI"
     return(r)
   }
-  if (method!="ONE" & method!="ALL")
+  if (method=="CH") 
+  {
+    fit <- psych::principal(x_num, nfactors = n_indic, scores=TRUE)
+    pesi_fatt = as.matrix(colSums(fit$loading*fit$loading)/n_indic) 
+    pesi_fatt = pesi_fatt[1:dim]
+    fit$scores = fit$scores[,1:dim]
+    ci_factor_est = fit$scores %*% pesi_fatt
+    r<-list(ci_factor_est=ci_factor_est, loadings_fact=pesi_fatt, ci_method="factor")
+    r$call<-match.call()
+    class(r)<-"CI"
+    return(r)
+  }
+    if (method!="ONE" & method!="ALL" & method!="CH")
   {
     stop("Please check method!") 
   }   

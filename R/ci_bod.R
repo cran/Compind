@@ -28,12 +28,16 @@ ci_bod <- function(x,indic_col)
   
   ci_data = as.matrix(cbind(x_num))
   uni <- as.matrix(seq(1, 1, len = dim(ci_data)[1]))
-  CI <- Benchmarking::dea(uni,ci_data,ORIENTATION=1,RTS=3)
+  CI <- Benchmarking::dea.dual(uni,ci_data,ORIENTATION=1,RTS=3)
+  #Peers = peers(CI)
+  Lambda = CI$v
   
-  r<-list(ci_bod_est=CI$eff,ci_method="bod")
+  r<-list(ci_bod_est=CI$eff,ci_bod_weights = Lambda, ci_method="bod")
   r$call<-match.call()
   class(r)<-"CI"
   r
     
   ##return(ci_bod_est)
 }
+
+

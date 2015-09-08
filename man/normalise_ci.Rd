@@ -5,7 +5,7 @@
 Normalisation and polarity functions
 }
 
-\description{This function let to normalise simple indicators according to the polarity of each one.}
+\description{This function lets to normalise simple indicators according to the polarity of each one.}
 
 \usage{
 normalise_ci(x, indic_col, polarity, method=1, z.mean=0, z.std=1, ties.method ="average")

@@ -16,6 +16,7 @@
 \value{An object of class "CI". This is a list containing the following elements:
   \item{ci_bod_est}{Composite indicator estimated values.}
   \item{ci_method}{Method used; for this function ci_method="bod".}
+  \item{ci_bod_weights}{Raw weights assigned to the simple indicators (Dual values - prices - in the DUAL Dea formulation).}
 }
 
 \references{
@@ -37,6 +38,10 @@ i1 <- seq(0.3, 0.5, len = 100) - rnorm (100, 0.2, 0.03)
 i2 <- seq(0.3, 1, len = 100)   - rnorm (100, 0.2, 0.03)
 Indic = data.frame(i1, i2)
 CI = ci_bod(Indic)
+ # validating BoD score
+w = CI$ci_bod_weights
+Indic[,1]*w[,1] + Indic[,2]*w[,2]
+
 
 data(EU_NUTS1)
 data_norm = normalise_ci(EU_NUTS1,c(2:3),polarity = c("POS","POS"), method=2)
