@@ -3,7 +3,7 @@
 \title{EU NUTS1 Transportation data}
 \description{Eurostat regional transport statistics (reg_tran) data, year 2012.
 
-For more info, please see \url{http://epp.eurostat.ec.europa.eu/portal/page/portal/statistics/themes}.
+For more info, please see \url{http://ec.europa.eu/eurostat/data/browse-statistics-by-theme}.
 }
 \usage{data(EU_NUTS1)}
 \format{EU_NUTS1 is a dataset with 34 observations and two indicators describing transportation infrastructure endowment of the main (in terms of population and GDP) European NUTS1 regions: France, Germany, Italy, Spain (United Kingdom has been omitted, due to lack of data concerning railways).

@@ -32,7 +32,7 @@ normalise_ci <- function(x, indic_col, polarity, method=1, z.mean=0, z.std=1, ti
       Sqm <- matrix(0, nrow=1, ncol=n_indic)
       for (i in seq(1,n_indic)) 
       {
-        Sqm[i] <- var(x_num[,i], na.rm=TRUE)
+        Sqm[i] <- sd(x_num[,i], na.rm=TRUE)
       }
         
       for (i in seq(1,n_indic)) 

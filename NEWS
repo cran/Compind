@@ -1,0 +1,14 @@
+Compind v1.1.2 (Release date: 2015-mm-dd)
+==============
+Changes:
+* Compind::Compind_vignette has been included.
+* Fixed normalise_ci function
+
+
+Compind v1.1 (Release date: 2015-09-07)
+==============
+Changes:
+* ci_factor function: new method (CH), modified old function
+* ci_bod : Bod weights are avalaible
+* ci_mean_min: Mean-Min Function (MMF)
+

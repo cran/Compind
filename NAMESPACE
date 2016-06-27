@@ -8,6 +8,7 @@ importFrom(psych, geometric.mean)
 #import(boot)
 importFrom(boot, boot)
 importFrom(boot, boot.ci)
+importFrom("stats", "sd")
 
 importFrom(nonparaeff, orderm)
 importFrom(nonparaeff, ar.dual.dea)
