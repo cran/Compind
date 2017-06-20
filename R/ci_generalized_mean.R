@@ -1,4 +1,4 @@
-ci_mean_geom <- function(x, indic_col, na.rm=TRUE)
+ci_generalized_mean <- function(x, indic_col, p, na.rm=TRUE)
 {
  # library(psych)
   x_num   = x[,indic_col]
@@ -32,12 +32,15 @@ ci_mean_geom <- function(x, indic_col, na.rm=TRUE)
   t_x = t(x_num)
   
   if (!na.rm) {
-  ci_mean_geom_est <- geometric.mean(t_x)
+    x_elev_p = x_num^p
+    sum_p = apply(x_elev_p,1,sum)
+    ci_generalized_mean_est = (1/n_indic*sum_p)^1/p
+    
   } else {
-  ci_mean_geom_est <- geometric.mean(t_x,na.rm=FALSE)  
+    ci_generalized_mean_est <- 1 #### CAMBIARE
   }
   
-  r<-list(ci_mean_geom_est=ci_mean_geom_est, ci_method="mean_geom")
+  r<-list(ci_generalized_mean_est=ci_generalized_mean_est, ci_method="generalized_mean")
   r$call<-match.call()
   class(r)<-"CI"
   return(r)

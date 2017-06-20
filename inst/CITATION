@@ -1,4 +1,4 @@
-citHeader("To cite Formula in publications use")
+citHeader("To cite Compind in publications use")
 
 citEntry(entry = "Article",
   title        = "Non-compensability in composite indicators: a robust directional frontier method",

@@ -18,7 +18,7 @@
   \item{ci_method}{Method used; for this function ci_method="bod_var_w".}
 }
 
-\references{Vidoli F., Mazziotta C., "\emph{Robust weighted composite indicators by means of frontier methods with an application to European infrastructure endowment}", Statistica Applicata, Italian Journal of Applied Statistics, 2013.}
+\references{Vidoli F., Mazziotta C. (2013) "\emph{Robust weighted composite indicators by means of frontier methods with an application to European infrastructure endowment}", Statistica Applicata, Italian Journal of Applied Statistics.}
 
 \author{Vidoli F.}
 

@@ -16,17 +16,17 @@
 \value{An object of class "CI". This is a list containing the following elements:
   \item{ci_bod_est}{Composite indicator estimated values.}
   \item{ci_method}{Method used; for this function ci_method="bod".}
-  \item{ci_bod_weights}{Raw weights assigned to the simple indicators (Dual values - prices - in the DUAL Dea formulation).}
+  \item{ci_bod_weights}{Raw weights assigned to the simple indicators (Dual values - prices - in the dual DEA formulation).}
 }
 
 \references{
 
-OECD, \emph{Handbook on constructing composite indicators: methodology and user guide}, 2008.
+OECD (2008) "\emph{Handbook on constructing composite indicators: methodology and user guide}".
 
-Melyn W. and Moesen W.W., "\emph{Towards a synthetic indicator of macroeconomic performance: unequal weighting when limited information is available}", Public Economic research Paper 17, CES, KU Leuven, 1991.
+Melyn W. and Moesen W.W. (1991) "\emph{Towards a synthetic indicator of macroeconomic performance: unequal weighting when limited information is available}", Public Economic research Paper 17, CES, KU Leuven.
 
-Witte, K. D., Rogge, N. "\emph{Accounting for exogenous influences in a benevolent performance evaluation of teachers}". Tech. rept. Working
-Paper Series ces0913, Katholieke Universiteit Leuven, Centrum voor Economische Studien, 2009.
+Witte, K. D., Rogge, N. (2009) "\emph{Accounting for exogenous influences in a benevolent performance evaluation of teachers}". Tech. rept. Working
+Paper Series ces0913, Katholieke Universiteit Leuven, Centrum voor Economische Studien.
 }
 
 \author{Vidoli F.}

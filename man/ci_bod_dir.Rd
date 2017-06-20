@@ -21,7 +21,7 @@
 %   INSERIRE FUNZIONE CHE CALCOLA TRAMITE ACP
 %}
 
-\references{Fusco E., \emph{Enhancing non compensatory composite indicators: A directional proposal}, 2013, unpublished}
+\references{Fusco E. (2015) "\emph{Enhancing non compensatory composite indicators: A directional proposal}", European Journal of Operational Research, 242(2), 620-630.}
 
 \author{Vidoli F., Fusco E.}
 

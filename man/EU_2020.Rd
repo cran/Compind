@@ -3,7 +3,7 @@
 \title{Europe 2020 indicators}
 \description{Europe 2020, a strategy for jobs and smart, sustainable and inclusive growth, is based on five EU headline targets which are currently measured by eight headline indicators, Headline indicators, Eurostat, year 1990-2012 (Last update:	21/11/2013).
 
-For more info, please see \url{http://ec.europa.eu/europe2020/index_en.htm}.
+For more info, please see \url{http://ec.europa.eu/eurostat/en/web/products-statistics-in-focus/-/KS-SF-12-039}.
 }
 \usage{data(EU_2020)}
 
@@ -25,6 +25,6 @@ For more info, please see \url{http://ec.europa.eu/europe2020/index_en.htm}.
 	\item{deprivedXXXX}{Severely materially deprived people - 1000 persons Perc. of total population, year XXXX (2003-2012).}	
 }}
 
-\references{\url{http://ec.europa.eu/europe2020/index_en.htm}}
+\references{\url{https://ec.europa.eu/info/strategy/european-semester/framework/europe-2020-strategy_en}}
 \author{Vidoli F.}
 \examples{data(EU_2020)}

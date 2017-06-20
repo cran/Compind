@@ -1,8 +1,21 @@
-Compind v1.1.2 (Release date: 2015-mm-dd)
+Compind v1.2 (Release date: 2017-16-06)
+==============
+Changes:
+
+New functions:
+* ci_bod_constr: Constrained Benefit of the Doubt approach
+* ci_generalized_mean: Weighting method based on generalized mean
+* ci_geom_bod_intertemp: Intertemporal analysis for geometric mean quantity index numbers
+* ci_geom_gen: generalization of the previous function "ci_mean_geom"
+
+Deleted
+* ci_bod_vrs
+
+
+Compind v1.1.2 (Release date: 2016-06-27)
 ==============
 Changes:
 * Compind::Compind_vignette has been included.
-* Fixed normalise_ci function
 
 
 Compind v1.1 (Release date: 2015-09-07)

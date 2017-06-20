@@ -21,7 +21,7 @@ ci_factor(x,indic_col,method="ONE",dim)
   \item{ci_method}{Method used; for this function ci_method="factor".}
 }
 
-\references{OECD, \emph{Handbook on constructing composite indicators: methodology and user guide}, 2008}
+\references{OECD (2008) "\emph{Handbook on constructing composite indicators: methodology and user guide}".}
 
 \author{
   Vidoli F.
