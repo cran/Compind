@@ -39,7 +39,8 @@ ci_geom_bod_intertemp <- function(x0,x1,indic_col,up_w,low_w,bench)
   # Computations of the Benchmark Change Effect C
   benc_m = matrix(0, nrow=n_unit, ncol=n_indic)
   for (j in 1:n_unit){
-    benc_m[j,] <- (Indic_t1[bench,]/Indic_t0[bench,])^(-(w_t1[j,]+w_t0[j,])/2)
+    benc_m[j,] <- as.matrix((Indic_t1[bench,]/Indic_t0[bench,])^(-(w_t1[j,]+w_t0[j,])/2))
+    
   }
   BenchmarkEffect_t1_vs_t0   <- rowProds(benc_m)
   

@@ -48,7 +48,7 @@ ci_geom_gen <- function(x,indic_col,meth,up_w,low_w,bench)
 
   
   # Normalising by benchmark unit vector
-  x_num_norm = sweep(x_num, 2, t(x_num[bench,]), "/")
+  x_num_norm = sweep(x_num, 2, t(x_num[bench,]), "/",check.margin=FALSE)
   
   # calculation data_norm * weights
   mult_BoD = rowProds(x_num_norm ^ w)
