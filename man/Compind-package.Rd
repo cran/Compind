@@ -11,11 +11,10 @@
 \tabular{ll}{
 Package: \tab Compind\cr
 Type: \tab Package\cr
-Version: \tab 1.2\cr
-Date: \tab 2017-16-06\cr
-Depends: \tab Benchmarking, Hmisc, MASS, ggplot2, psych, GPArotation,  lpSolve, nonparaeff, boot\cr
+Version: \tab 2.0\cr
+Date: \tab 2018-1-29\cr
+Depends: \tab Benchmarking, Hmisc, MASS, ggplot2, psych, GPArotation,  lpSolve, nonparaeff, boot, np\cr
 License: \tab GPL-3\cr
-Built: \tab R 3.0.2; ; 2017-16-06 13:14:40 UTC; unix\cr
 }
 
 
@@ -25,11 +24,14 @@ Francesco Vidoli, Elisa Fusco
 Maintainer: Francesco Vidoli <fvidoli@gmail.com>
 }
 
+
 \references{
 
 Daraio, C., Simar, L. (2005) "\emph{Introducing environmental variables in nonparametric frontier models: a probabilistic approach}", Journal of productivity analysis, 24(1), 93-121.
 
 Fusco E. (2015) "\emph{Enhancing non compensatory composite indicators: A directional proposal}", European Journal of Operational Research, 242(2), 620-630.
+
+R. Lahdelma, P. Salminen (2001) "\emph{SMAA-2: Stochastic multicriteria acceptability analysis for group decision making}", Operations Research, 49(3), pp. 444-454
 
 OECD (2008) "\emph{Handbook on constructing composite indicators: methodology and user guide}".
 
@@ -39,6 +41,8 @@ Melyn W. and Moesen W.W. (1991) "\emph{Towards a synthetic indicator of macroeco
 
 Van Puyenbroeck T. and Rogge N. (2017) "\emph{Geometric mean quantity index numbers with Benefit-of-the-Doubt weights}", European Journal of Operational Research, 256(3), 1004-1014.
 
+Rogge N., de Jaeger S. and Lavigne C. (2017) "\emph{Waste Performance of NUTS 2-regions in the EU: A Conditional Directional Distance Benefit-of-the-Doubt Model}", Ecological Economics, vol.139, pp. 19-32.
+
 Simar L., Vanhems A. (2012) "\emph{Probabilistic characterization of directional distances and their robust versions}", Journal of Econometrics, 166(2), 342-354.
 
 UNESCO (1974)"\emph{Social indicators: problems of definition and of selection}", Paris.
@@ -46,5 +50,7 @@ UNESCO (1974)"\emph{Social indicators: problems of definition and of selection}"
 Vidoli F., Fusco E., Mazziotta C. (2015) "\emph{Non-compensability in composite indicators: a robust directional frontier method}", Social Indicators Research, 122(3), 635-652.
 
 Vidoli F., Mazziotta C. (2013) "\emph{Robust weighted composite indicators by means of frontier methods with an application to European infrastructure endowment}", Statistica Applicata, Italian Journal of Applied Statistics.
+
+Zanella A., Camanho A.S. and Dias T.G. (2015) "\emph{Undesirable outputs and weighting schemes in composite indicators based on data envelopment analysis}", European Journal of Operational Research, vol. 245(2), pp. 517-530.
 
 }

@@ -16,6 +16,20 @@ import(Hmisc)
 import(MASS)
 import(GPArotation)
 import(lpSolve)
+
+import(spdep)
+
 importFrom("stats", "var")
 importFrom("stats", "sd")
+importFrom("stats", "median")
+importFrom("stats", "runif")
+
+importFrom("utils", "read.table")
+importFrom("np", "npcdensbw")
+importFrom("np", "npksum")
+
+importFrom("smaa", "smaa.values")
+importFrom("smaa", "smaa.ranks")
+
+
 

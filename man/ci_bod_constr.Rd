@@ -9,8 +9,8 @@
 \arguments{
   \item{x}{A data.frame containing simple indicators.}
   \item{indic_col}{A numeric list indicating the positions of the simple indicators.}
-  \item{up_w}{Weights upper bound.}
-  \item{low_w}{Weights lower bound.}
+  \item{up_w}{Importance weights upper bound.}
+  \item{low_w}{Importance weights lower bound.}
 }
 
 %\details{...}

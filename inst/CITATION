@@ -1,19 +1,18 @@
-citHeader("To cite Compind in publications use")
+citHeader("Please cite Compind package as:")
 
 citEntry(entry = "Article",
-  title        = "Non-compensability in composite indicators: a robust directional frontier method",
-  author       = personList(as.person("Francesco Vidoli"),
-                   as.person("Elisa Fusco")),
-  journal      = "Social Indicators Research",
-  year         = "2015",
-  volume       = "122",
-  number       = "3",
-  pages        = "635--652",
+  title        = "Spatial heterogeneity in composite indicator: a methodological proposal",
+  author       = personList(as.person("Elisa Fusco"),
+                   as.person("Francesco Vidoli"), as.person("Biresh K. Sahoo")),
+  journal      = "Omega",
+  year         = "2018",
+  volume       = "77",
+  pages        = "1--14",
 
   textVersion  =
-  paste("Vidoli F., Fusco E., Mazziotta C. (2015)",
-        "Non-compensability in composite indicators: a robust directional frontier method",
-        "Social Indicators Research",
-        "Vol. 122, Issue 3, pp. 635-652")
+  paste("Fusco E., Vidoli F., Sahoo B.K. (2018)",
+        "Spatial heterogeneity in composite indicator: a methodological proposal",
+        "Omega",
+        "Vol. 77, pp. 1-14")
 )
 

@@ -29,7 +29,7 @@ Vidoli F., Mazziotta C., "\emph{Robust weighted composite indicators by means of
 
 \author{Vidoli F.}
 
-\seealso{ \code{\link{ci_bod}}, \code{\link{ci_bod_var_w}}}
+\seealso{ \code{\link{ci_bod}}}
 
 \examples{
 i1 <- seq(0.3, 0.5, len = 100) - rnorm (100, 0.2, 0.03)

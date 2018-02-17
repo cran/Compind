@@ -1,8 +1,25 @@
-Compind v1.2.1 (Release date: 2017-07-12)
+
+Compind v2.0 (Release date: 2018-2-13)
 ==============
 Changes:
 
+New functions:
+
+* ci_bod_constr_bad: Constrained Benefit of the Doubt approach (BoD) in presence of undesirable  indicators
+* ci_rbod_constr_bad: Robust constrained Benefit of the Doubt approach (BoD) in presence of undesirable  indicators.
+* ci_rbod_constr_bad_Q: Conditional robust constrained Benefit of the Doubt approach (BoD) in presence of undesirable  indicators
+* ci_rbod_spatial: Spatial robust Benefit of the Doubt approach (Sp-RBoD)
+* ci_smaa_constr: Constrained stochastic multi-objective acceptability analysis (C-SMAA)
+* ci_ampi: Adjusted Mazziotta-Pareto Index (AMPI) method
+
+
+Compind v1.2.1 (Release date: 2017-07-12)
+============== 
+Changes: 
+
 * ci_geom_bod_intertemp: correction due to new R functionalities
+
+
 
 Compind v1.2 (Release date: 2017-16-06)
 ==============

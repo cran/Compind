@@ -12,7 +12,7 @@
   \item{meth}{"EQUAL" = Equal weighting set, "BOD" =  Benefit-of-the-Doubt weighting set.}
   \item{up_w}{if meth="BOD"; upper bound of the weighting set.}
   \item{low_w}{if meth="BOD"; lower bound of the weighting set.}
-  \item{bench}{Row number of the benchmark unit used to normalize the data.frame \emph{x}.}
+  \item{bench}{Row number of the benchmark unit used to normalize the data.frame \code{x}.}
 }
 
 
