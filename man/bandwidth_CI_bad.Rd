@@ -1,16 +1,18 @@
-\name{bandwidth_CI}
-\alias{bandwidth_CI}
+\name{bandwidth_CI_bad}
+\alias{bandwidth_CI_bad}
 
-\title{Multivariate mixed bandwidth selection for exogenous variables (in presence of all desirable  indicators)}
+\title{Multivariate mixed bandwidth selection for exogenous variables (in presence of undesirable  indicators)}
 
 \description{A function for the selection of optimal multivariate mixed bandwidths for the kernel
 density estimation of continuous and discrete exogenous variables.}
 
-\usage{bandwidth_CI(x, indic_col, Q=NULL, Q_ord=NULL)}
+\usage{bandwidth_CI_bad(x, indic_col, ngood, nbad, Q=NULL, Q_ord=NULL)}
 
 \arguments{
   \item{x}{A data frame containing simple indicators.}
-  \item{indic_col}{Simple indicators column number; it has to be greater than 1}
+  \item{indic_col}{Simple indicators column number.}
+  \item{ngood}{The number of desirable outputs; it has to be greater than 0.}
+  \item{nbad}{The number of undesirable  outputs; it has to be greater than 0.}
   \item{Q}{A matrix containing continuous exogenous variables.}
   \item{Q_ord}{A matrix containing discrete exogenous variables.}
 }
@@ -18,7 +20,7 @@ density estimation of continuous and discrete exogenous variables.}
 
 \value{
   \item{bandwidth}{A matrix containing the optimal bandwidths for the exogenous variables indicate in Q and Q_ord.}
-  \item{ci_method}{"bandwidth_CI"}
+  \item{ci_method}{"bandwidth_CI_bad"}
 }
 
 \details{Author thanks Nicky Rogge for his help and for making available the original code of the bandwidth function.}
@@ -34,5 +36,5 @@ dat   <- EU_2020[-c(10,18),indic]
 Q_GDP <- EU_2020[-c(10,18),"percGDP_2011"]
 
 # Conditional robust BoD Constrained VWR
-band = bandwidth_CI(dat, Q = Q_GDP)
+band = bandwidth_CI_bad(dat, ngood=1, nbad=2, Q = Q_GDP)
 }

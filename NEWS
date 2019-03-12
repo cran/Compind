@@ -1,4 +1,12 @@
 
+Compind v2.1 (Release date: 2019-3-11)
+==============
+Changes:
+
+New functions:
+* ci_bod_constr_mpi: Non Compensative Constrained Benefit of the Doubt approach using Mazziotta-Pareto Index penalization
+
+
 Compind v2.0 (Release date: 2018-2-13)
 ==============
 Changes:
