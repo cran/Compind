@@ -1,10 +1,7 @@
-bandwidth_CI <- function(x, indic_col, Q=NULL, Q_ord=NULL)
+bandwidth_CI <- function(x, indic_col, ngood, nbad, Q=NULL, Q_ord=NULL)
 {
   x_num = x[, indic_col]
   n_indic <- dim(as.matrix(x_num))[2]
-  ngood = n_indic -1 
-  nbad  = 1
-  
   n_unit <- dim(as.matrix(x_num))[1]
   for (i in seq(1, n_indic)) {
     if (!is.numeric(x_num[, i])) {
@@ -53,7 +50,7 @@ flag_ii<-matrix(FALSE,nrow=length(x_num[,1]),ncol=(b+g))
 # Flag all data values which satisfy the conditions below with TRUE-values
 
 flag_gi <- apply(matrix(x_num[,1:g],ncol=g), 2, function(x) x<=median(x))
-flag_bi <- apply(matrix(x_num[,(g+1):(g+b)],ncol=b), 2, function(x) x<=median(x)) #########
+flag_bi <- apply(matrix(x_num[,(g+1):(g+b)],ncol=b), 2, function(x) x>=median(x))
 flag_ii <- cbind(flag_gi,flag_bi)
 
 # Flag the NUTS II regions which satisfy the (b+g) conditions
@@ -100,7 +97,7 @@ for (i in (1:length(x_num[,1])))
   flag_i<-matrix(FALSE,nrow=length(x_num[,1]),ncol=(b+g))
   # Flag the data values that dominate the values of DMU i
   flag_g <- apply(matrix(x_num[,1:g],ncol=g), 2, function(x) x<=x[i])
-  flag_b <- apply(matrix(x_num[,(g+1):(g+b)],ncol=b), 2, function(x) x<=x[i]) ###################
+  flag_b <- apply(matrix(x_num[,(g+1):(g+b)],ncol=b), 2, function(x) x>=x[i])
   flag_i <- cbind(flag_g,flag_b)
   #Define a (n x 1) matrix 
   flag <- matrix(nrow=length(x_num[,1]),ncol=1)

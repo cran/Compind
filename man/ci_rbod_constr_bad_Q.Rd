@@ -48,7 +48,7 @@ dat   <- EU_2020[-c(10,18),indic]
 Q_GDP <- EU_2020[-c(10,18),"percGDP_2011"]
 
 # Conditional robust BoD Constrained VWR
-band = bandwidth_CI_bad(dat, ngood=1, nbad=2, Q = Q_GDP)
+band = bandwidth_CI(dat, ngood=1, nbad=2, Q = Q_GDP)
 
 CI_BoD_C = ci_rbod_constr_bad_Q(dat, 
                                 ngood=1, 
