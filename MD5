@@ -1,6 +1,6 @@
-7dd431f151f0a4bb9ab4c26fca20e6cf *DESCRIPTION
+bde6033ccb606f7527ef376108af3927 *DESCRIPTION
 10712a09a2c07a00fe8b85cbb1824d09 *NAMESPACE
-45ddd4a05578e3bc7259e27ae45a437b *NEWS
+70ceac9a538436a1599d3e5254bb89b8 *NEWS
 cd0e7c6adbb8579250a9d3e61f64aeda *R/bandwidth_CI.R
 5c0913344a34c06603386935c89e4336 *R/ci_ampi.R
 2a26f50b01d7443690622a2ef344a44a *R/ci_bod.R
@@ -22,11 +22,11 @@ ae28102c03b51d9d20492f886ec4046e *R/ci_rbod_dir.R
 40ae0b086ec55e1ed4d428eeb74cdfcc *R/ci_smaa_constr.R
 bf6c1b7c2bf9fad44ea7b893bda9fc4d *R/ci_wroclaw.r
 0c12215de968087b67ffdcb664fbc921 *R/normalise_ci.R
-4584ef9e8d96603ef61ed6d74333d6be *build/vignette.rds
+98d4e6a276c5166a6f84a1fe8f15caa9 *build/vignette.rds
 5fd8378783add0195ab29bf8d70d7970 *data/EU_2020.rda
 04de5c1e9e04e73502e6dc63f84a621d *data/EU_NUTS1.rda
 ddb05e13b4a789e5500fcbfc4264345b *inst/CITATION
-7b73c7309021652ba57791ef520a486c *inst/doc/Compind_vignette.pdf
+7c79d461c1f43c7a8361e721ded25a06 *inst/doc/Compind_vignette.pdf
 1deebd4d88f478be92e129de67aaa543 *inst/doc/Compind_vignette.pdf.asis
 7b434fab1cf0eaca8c14ae5bb520712b *man/Compind-package.Rd
 44eee3947817ab26de74e0379b56fa2f *man/EU_2020.Rd
@@ -49,7 +49,7 @@ b04a8ebf90c9f3ab3b752d45fd429ac1 *man/ci_mpi.Rd
 08e656033c29656857effe1bfe63c0b1 *man/ci_rbod_constr_bad_Q.Rd
 d46d7bb1a17c7b12777fd917d5883a36 *man/ci_rbod_dir.Rd
 42f461919fef66aa991787b9c452c202 *man/ci_rbod_spatial.Rd
-737659fc840926de807a9574fe49061b *man/ci_smaa_constr.Rd
+c069cb7868ff529befe42f3be96375a3 *man/ci_smaa_constr.Rd
 bde24d22ffafd7257d3d32f69eb0d898 *man/ci_wroclaw.Rd
 6ca1b23e40ab812c2acf743743b65cda *man/normalise_ci.Rd
 1deebd4d88f478be92e129de67aaa543 *vignettes/Compind_vignette.pdf.asis
