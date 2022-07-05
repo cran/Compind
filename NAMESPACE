@@ -10,6 +10,7 @@ importFrom(boot, boot)
 importFrom(boot, boot.ci)
 
 importFrom(nonparaeff, orderm)
+importFrom(nonparaeff, ar.dual.dea)
 
 import(Hmisc)
 import(MASS)

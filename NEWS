@@ -1,3 +1,11 @@
+
+Compind v2. (Release date: 2022-7-05)
+==============
+Changes:
+
+* Solved problem in a linked package (nonparaeff). function ci_bod_var_w is now at your disposal
+
+
 Compind v2.5 (Release date: 2022-6-20)
 ==============
 Changes:
