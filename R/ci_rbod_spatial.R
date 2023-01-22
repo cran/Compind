@@ -51,7 +51,7 @@ ci_rbod_spatial <- function(x, indic_col, M=20, B=100, W)
                            noutput = n_indic, 
                            orientation=2, M = M, B = B))
     if ('try-error' %in% class(rbod_cond)) next
-    eff_cond[i] = rbod_cond$eff
+    eff_cond[i] = 1/rbod_cond$eff
   }
   r <- list(ci_rbod_spatial_est = eff_cond, 
             ci_method = "rbod_spatial")

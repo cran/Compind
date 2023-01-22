@@ -25,6 +25,6 @@ For more info, please see \url{https://ec.europa.eu/eurostat/en/web/products-sta
 	\item{deprivedXXXX}{Severely materially deprived people - 1000 persons Perc. of total population, year XXXX (2003-2012).}	
 }}
 
-\references{\url{https://ec.europa.eu/info/business-economy-euro/economic-and-fiscal-policy-coordination/eu-economic-governance-monitoring-prevention-correction/european-semester_en}}
+
 \author{Vidoli F.}
 \examples{data(EU_2020)}

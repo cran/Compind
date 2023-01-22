@@ -40,7 +40,7 @@ ci_bod_dir <- function(x,indic_col,dir)
            ci_data_dir[,i] = ci_data[,i] * dir[i]
        }
     
-  ci_dir  = Benchmarking::dea(uni,ci_data_dir,RTS="crs", ORIENTATION="out", DIRECT=dir)
+  ci_dir  = Benchmarking::dea(uni,ci_data,RTS="crs", ORIENTATION="out", DIRECT=dir)
   ci_bod_dir_est = 1/(ci_dir$eff + 1)
   
   r<-list(ci_bod_dir_est=ci_bod_dir_est, ci_method="bod_dir")

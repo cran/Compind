@@ -31,10 +31,11 @@ ci_factor <- function(x,indic_col, method="ONE", dim=3)
   
   if (method=="ONE") 
   {
-    fit <- psych::principal(x_num, nfactors = n_indic, scores=TRUE)
+    fit <- psych::principal(x_num, nfactors = 1, scores=TRUE)
     pesi_fatt = as.matrix(colSums(fit$loading*fit$loading)/n_indic) 
-    fit$scores = fit$scores[,1]
     ci_factor_est = fit$scores
+    biplot(fit)
+    
     r<-list(ci_factor_est=ci_factor_est, loadings_fact=pesi_fatt, ci_method="factor")
     r$call<-match.call()
     class(r)<-"CI"
@@ -47,6 +48,8 @@ ci_factor <- function(x,indic_col, method="ONE", dim=3)
     pesi_fatt = as.matrix(colSums(fit$loading*fit$loading)/n_indic)    
     ci_factor_est = fit$scores %*% pesi_fatt
 
+    biplot(fit)
+    
     r<-list(ci_factor_est=ci_factor_est, loadings_fact=pesi_fatt, ci_method="factor")
     r$call<-match.call()
     class(r)<-"CI"
@@ -54,7 +57,8 @@ ci_factor <- function(x,indic_col, method="ONE", dim=3)
   }
   if (method=="CH") 
   {
-    fit <- psych::principal(x_num, nfactors = n_indic, scores=TRUE)
+    fit <- psych::principal(x_num, nfactors = dim, scores=TRUE)
+    biplot(fit)
     pesi_fatt = as.matrix(colSums(fit$loading*fit$loading)/n_indic) 
     pesi_fatt = pesi_fatt[1:dim]
     fit$scores = fit$scores[,1:dim]
