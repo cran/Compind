@@ -1,6 +1,6 @@
-4a21eb394a336fb23def908e0c7dca31 *DESCRIPTION
+a32010353d5b6e525d994dc1d7bc21b4 *DESCRIPTION
 1291221f1b4ba78be74e32e9112ecbd6 *NAMESPACE
-4322de641408f7820134fbf228c21299 *NEWS
+7ccae7b17f8c7001c6a5a7d3bb8cf528 *NEWS
 cd0e7c6adbb8579250a9d3e61f64aeda *R/bandwidth_CI.R
 5c0913344a34c06603386935c89e4336 *R/ci_ampi.R
 2a26f50b01d7443690622a2ef344a44a *R/ci_bod.R
@@ -13,7 +13,7 @@ c091cd24fb844a784727815d9ca0389a *R/ci_generalized_mean.R
 88259f1ffea42e9b48cbde2f1c774d7e *R/ci_geom_bod_intertemp.R
 a2e70cca75f85981fd67c6d36b1ef882 *R/ci_geom_gen.R
 9e07ba37ec13abf4406bffb68ef26229 *R/ci_mean_min.R
-d3fe2f76905acf21500c73bab4f21f44 *R/ci_mpi.R
+0f5d88a8a49a3bf2c513f340629e042e *R/ci_mpi.R
 23eff360b0f86b80655ce3f36e6be58e *R/ci_rbod.R
 09106b03494858eac0553e4832dd8850 *R/ci_rbod_constr_bad.R
 5256dbb786a8ef42772500f87fa4c2a6 *R/ci_rbod_constr_bad_Q.R
@@ -27,7 +27,7 @@ ef50baeeb31973ae829fef6f148ce077 *build/vignette.rds
 04de5c1e9e04e73502e6dc63f84a621d *data/EU_NUTS1.rda
 35b47011806ce4c79a32839f256d9c10 *data/data_HPI.rda
 ddb05e13b4a789e5500fcbfc4264345b *inst/CITATION
-0b983aefe362a5cc3ba85050a7ab5edb *inst/doc/Compind_vignette.pdf
+9244e82b713758211edd1ad31a36fda8 *inst/doc/Compind_vignette.pdf
 1deebd4d88f478be92e129de67aaa543 *inst/doc/Compind_vignette.pdf.asis
 7b434fab1cf0eaca8c14ae5bb520712b *man/Compind-package.Rd
 d8581d7333d810491a2127dc9e919045 *man/EU_2020.Rd
@@ -45,7 +45,7 @@ ff10d3ab3d3d560608985165c519ce65 *man/ci_bod_var_w.Rd
 e5ffce21abe41d4295910936d9e04340 *man/ci_geom_bod_intertemp.Rd
 a2a4b8876f15cb3acbb08c6096b3fc23 *man/ci_geom_gen.Rd
 6816c1e66c66aa98edd136d2d261b4f4 *man/ci_mean_min.Rd
-b04a8ebf90c9f3ab3b752d45fd429ac1 *man/ci_mpi.Rd
+11fd7e0f2343ba78db9801a9060b5447 *man/ci_mpi.Rd
 72fe6f629521735b3a3e6e603056c626 *man/ci_rbod.Rd
 6bed74d9225045dff0e094730b3c2913 *man/ci_rbod_constr_bad.Rd
 08e656033c29656857effe1bfe63c0b1 *man/ci_rbod_constr_bad_Q.Rd

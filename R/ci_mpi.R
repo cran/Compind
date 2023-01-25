@@ -34,11 +34,9 @@ ci_mpi <- function(x, indic_col, penalty="POS")
     
   
   #punto A
-  Ma <- colMeans(x_num) 
-  Sqm <- (apply(x_num,2,var))^0.5
   S=10
   M=100
-  z = ((x_num-Ma)/Sqm)*S + M
+  z = scale(x_num)*S + M
   
   #punto B
   Ma_z <- apply(z,1,mean)

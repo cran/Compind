@@ -16,6 +16,9 @@
   \item{ci_method}{Method used; for this function ci_method="mpi".}
 }
 
+
+\details{Author thanks Nguyen Viet Duong for reporting a calculation error}
+
 \references{
 De Muro P., Mazziotta M., Pareto A. (2011), "\emph{Composite Indices of Development and Poverty: An Application to MDGs}", Social Indicators Research, Volume 104, Number 1, pp. 1-18.}
 
