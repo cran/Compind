@@ -7,18 +7,7 @@
 
 \description{Compind package contains functions to enhance several approaches to the Composite Indicators (CIs) methods, focusing, in particular, on the normalisation and weighting-aggregation steps.}
 
-\details{
-\tabular{ll}{
-Package: \tab Compind\cr
-Type: \tab Package\cr
-Version: \tab 2.0\cr
-Date: \tab 2018-1-29\cr
-Depends: \tab Benchmarking, Hmisc, MASS, ggplot2, psych, GPArotation,  lpSolve, nonparaeff, boot, np\cr
-License: \tab GPL-3\cr
-}
 
-
-}
 \author{
 Francesco Vidoli, Elisa Fusco
 Maintainer: Francesco Vidoli <fvidoli@gmail.com>

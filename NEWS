@@ -1,8 +1,11 @@
-Compind v2.7.1 (Release date: 2023-01-24)
+Compind v2.8 (Release date: 2023-08-20)
 ==============
 Changes:
 
-* Some bugs have been fixed.
+New function:
+
+* ci_bod_mdir: Multi-directional Benefit of the Doubt approach (MDBoD)
+
 
 Compind v2.7 (Release date: 2023-01-19)
 ==============

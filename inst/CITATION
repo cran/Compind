@@ -1,9 +1,8 @@
 citHeader("Please cite Compind package as:")
 
-citEntry(entry = "Article",
+bibentry(bibtype = "Article",
   title        = "Spatial heterogeneity in composite indicator: a methodological proposal",
-  author       = personList(as.person("Elisa Fusco"),
-                   as.person("Francesco Vidoli"), as.person("Biresh K. Sahoo")),
+  author       = c("Elisa Fusco","Francesco Vidoli","Biresh K. Sahoo"),
   journal      = "Omega",
   year         = "2018",
   volume       = "77",
