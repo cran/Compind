@@ -12,27 +12,20 @@
   \item{meth}{"EQUAL" = Equal weighting set, "BOD" =  Benefit-of-the-Doubt weighting set.}
   \item{up_w}{if meth="BOD"; upper bound of the weighting set.}
   \item{low_w}{if meth="BOD"; lower bound of the weighting set.}
-  \item{bench}{Row number of the benchmark unit used to normalize the data.frame \code{x}.}
+  \item{bench}{Row number of the benchmark unit used to normalize the data.frame x.}
 }
 
 
 \value{An object of class "CI". This is a list containing the following elements:
 
 If meth = "EQUAL":
-
-\itemize{
-
   \item{ci_mean_geom_est}{: Composite indicator estimated values.}
   \item{ci_method}{: Method used; for this function ci_method="mean_geom".}
-}
 
 If meth = "BOD":  
-\itemize{
-
   \item{ci_geom_bod_est}{: Constrained composite indicator estimated values.}
-\item{ci_geom_bod_weights}{: Raw constrained weights assigned to the simple indicators.}
+  \item{ci_geom_bod_weights}{: Raw constrained weights assigned to the simple indicators.}
   \item{ci_method}{: Method used; for this function ci_method="geometric_bod".}
-  }
 
 }
 

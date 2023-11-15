@@ -1,6 +1,6 @@
-d3b4bc5bc51011261839e778c50caa49 *DESCRIPTION
-1291221f1b4ba78be74e32e9112ecbd6 *NAMESPACE
-4590d152c52108f2135c185fb205e937 *NEWS
+97fb150a254142e1de09b1ce91454241 *DESCRIPTION
+58c27e0f9c8af89c9c726f3196497b28 *NAMESPACE
+db469aa42cf2ecf28a39912a1fae37b5 *NEWS
 cd0e7c6adbb8579250a9d3e61f64aeda *R/bandwidth_CI.R
 5c0913344a34c06603386935c89e4336 *R/ci_ampi.R
 2a26f50b01d7443690622a2ef344a44a *R/ci_bod.R
@@ -10,6 +10,7 @@ cd0e7c6adbb8579250a9d3e61f64aeda *R/bandwidth_CI.R
 7a6edf881b4742025b7cca4f63fe6d32 *R/ci_bod_mdir.r
 f69be913ecaefa475a86a0401edd40d4 *R/ci_bod_var_w.R
 d9fcc5ae295c145d4a89a90309825fa1 *R/ci_factor.R
+9cfddd894b5571816c16696178eafb00 *R/ci_factor_mixed.R
 c091cd24fb844a784727815d9ca0389a *R/ci_generalized_mean.R
 88259f1ffea42e9b48cbde2f1c774d7e *R/ci_geom_bod_intertemp.R
 a2e70cca75f85981fd67c6d36b1ef882 *R/ci_geom_gen.R
@@ -29,7 +30,7 @@ ef50baeeb31973ae829fef6f148ce077 *build/vignette.rds
 04de5c1e9e04e73502e6dc63f84a621d *data/EU_NUTS1.rda
 35b47011806ce4c79a32839f256d9c10 *data/data_HPI.rda
 5d7fddf40b8028617f9f815eefadb023 *inst/CITATION
-22d52fa8e49013581bebdcac272c3c1c *inst/doc/Compind_vignette.pdf
+7e6a5af45fc3a4977700edcd7a6a25da *inst/doc/Compind_vignette.pdf
 1deebd4d88f478be92e129de67aaa543 *inst/doc/Compind_vignette.pdf.asis
 645074dee70a87eb19d4d306129f7ae4 *man/BLI_2017.Rd
 074983ebf7f98d6a68cb11f8ce8f78f7 *man/Compind-package.Rd
@@ -45,9 +46,10 @@ a6daefe2429957ad91a9fb2207f1bd5d *man/ci_bod_dir.Rd
 5af232ee7b30e57b0c00a952d7f8be47 *man/ci_bod_mdir.Rd
 ff10d3ab3d3d560608985165c519ce65 *man/ci_bod_var_w.Rd
 86af8f76839d31270a1fc6a66449293d *man/ci_factor.Rd
+ab05bf94910c1a485310bd30323f4a32 *man/ci_factor_mixed.Rd
 26f7002f117a4bc5ebc0182c812cecc3 *man/ci_generalized_mean.Rd
 e5ffce21abe41d4295910936d9e04340 *man/ci_geom_bod_intertemp.Rd
-a2a4b8876f15cb3acbb08c6096b3fc23 *man/ci_geom_gen.Rd
+1a13b56ff24b1d9515341c57f38b27bf *man/ci_geom_gen.Rd
 6816c1e66c66aa98edd136d2d261b4f4 *man/ci_mean_min.Rd
 b04a8ebf90c9f3ab3b752d45fd429ac1 *man/ci_mpi.Rd
 72fe6f629521735b3a3e6e603056c626 *man/ci_rbod.Rd

@@ -26,6 +26,8 @@ importFrom("stats", "median")
 importFrom("stats", "runif")
 importFrom("stats", "biplot")
 
+importFrom("FactoMineR", "FAMD")
+
 importFrom("utils", "read.table")
 importFrom("np", "npcdensbw")
 importFrom("np", "npksum")
