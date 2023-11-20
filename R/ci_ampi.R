@@ -1,4 +1,6 @@
-ci_ampi = function (x, indic_col, gp, time, polarity, penalty = "NEG") 
+# ampi with penality and normalized data
+
+ci_ampi <- function (x, indic_col, gp, time, polarity, penalty = "NEG") 
 {
   x_num = x[, indic_col]
   n_indic <- dim(as.matrix(x_num))[2]
@@ -8,8 +10,7 @@ ci_ampi = function (x, indic_col, gp, time, polarity, penalty = "NEG")
   }
   for (i in seq(1, n_indic)) {
     if (!is.numeric(x_num[, i])) {
-      stop(paste("Data set not numeric at column:", 
-                 i))
+      stop(paste("Data set not numeric at column:", i))
     }
   }
   for (i in seq(1, n_unit)) {
@@ -21,6 +22,8 @@ ci_ampi = function (x, indic_col, gp, time, polarity, penalty = "NEG")
     }
   }
   timef = levels(as.factor(time))
+  penalty <- matrix(0, nrow = (n_unit/length(timef)), ncol = length(timef))
+  norm <- list()
   ci_ampi_est <- matrix(0, nrow = (n_unit/length(timef)), ncol = length(timef))
   for (t in 1:length(timef)) {
     x_num_t <- x_num[time == timef[t], ]
@@ -35,7 +38,6 @@ ci_ampi = function (x, indic_col, gp, time, polarity, penalty = "NEG")
     delta = (max - min)/2
     maxim = gp + delta
     minim = gp - delta
-    
     for (i in seq(1, n_indic)) {
       if (polarity[i] == "POS") {
         ci_norm[, i] = (((x_num_t[, i]) - minim[i])/(maxim[i] - 
@@ -49,16 +51,20 @@ ci_ampi = function (x, indic_col, gp, time, polarity, penalty = "NEG")
         stop("Please check polarity!")
       }
     }
+    norm[[t]] <- ci_norm
     Ma_z <- apply(ci_norm, 1, mean)
-    Sqm_z <- (apply(ci_norm, 1, function(x) {var(x)*(length(x)-1)/length(x)}))^0.5
+    Sqm_z <- (apply(ci_norm, 1, function(x) {var(x)*(length(x)- 1)/length(x)}))^0.5
     cv = Sqm_z/Ma_z
-    ifelse(penalty=="POS", ci_ampi_est[, t] <- round(Ma_z + (Sqm_z * cv), 3), 
-           ci_ampi_est[, t] <- round(Ma_z - (Sqm_z * cv), 3))
+    penalty[,t] <- (Sqm_z * cv)
+    ifelse(penalty == "POS", ci_ampi_est[,t] <- round(Ma_z + penalty[,t], 3), ci_ampi_est[, t] <- round(Ma_z - penalty[,t], 3))
   }
   ci_ampi_est <- as.data.frame(ci_ampi_est)
+  penalty <- as.data.frame(penalty)
   colnames(ci_ampi_est) <- timef
-  r <- list(ci_ampi_est = ci_ampi_est, ci_method = "ampi")
+  r <- list(ci_ampi_est = ci_ampi_est, ci_method = "ampi", ci_penalty=penalty, ci_norm=norm)
   r$call <- match.call()
   class(r) <- "CI"
   return(r)
 }
+
+

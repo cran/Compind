@@ -17,9 +17,11 @@
 \value{An object of class "CI". This is a list containing the following elements:
   \item{ci_ampi_est}{Composite indicator estimated values.}
   \item{ci_method}{Method used; for this function ci_method="ampi".}
+  \item{ci_penalty}{Matrix containing penalties only.}
+  \item{ci_norm}{List containing only the normalised indicators for each year.}
 }
 
-\details{Author thanks Leonardo Alaimo for their help and for making available the original code of the AMPI function.}
+\details{Author thanks Leonardo Alaimo for their help and for making available the original code of the AMPI function. Federico Roscioli for his integrations to the original code.}
 
 \references{
 Mazziotta, M., Pareto, A. (2013) "\emph{A Non-compensatory Composite Index for Measuring Well-being over Time}", Cogito. Multidisciplinary Research Journal Vol. V, no. 4, pp. 93-104
@@ -27,7 +29,7 @@ Mazziotta, M., Pareto, A. (2013) "\emph{A Non-compensatory Composite Index for M
 Mazziotta, M., Pareto, A. (2016)."\emph{On a Generalized Non-compensatory Composite Index for Measuring Socio-economic Phenomena}", Cogito. Social Indicators Research, Vol. 127, no. 3, pp. 983-1003
 }
 
-\author{Fusco E., Alaimo L., Giovagnoli C., Patelli L.}
+\author{Fusco E., Alaimo L., Giovagnoli C., Patelli L., F. Roscioli}
 
 \seealso{ \code{\link{ci_bod}}, \code{\link{normalise_ci}}}
 
@@ -49,5 +51,6 @@ CI <- ci_ampi(EU_2020_long,
               polarity= c("POS", "POS"), 
               penalty="POS")
 CI$ci_ampi_est
-
+CI$ci_penalty
+CI$ci_norm
 }
