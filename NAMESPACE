@@ -35,5 +35,11 @@ importFrom("np", "npksum")
 importFrom("smaa", "smaa.values")
 importFrom("smaa", "smaa.ranks")
 
+importFrom("GWmodel", "gw.dist")
+importFrom("GWmodel", "gw.weight")
+importFrom("GWmodel", "bw.gwss.average")
+
+importFrom("sp", "SpatialPointsDataFrame")
+
 
 

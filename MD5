@@ -1,6 +1,6 @@
-1dc7225c81ab395fcc1fe3cbf98d2f1f *DESCRIPTION
-58c27e0f9c8af89c9c726f3196497b28 *NAMESPACE
-db469aa42cf2ecf28a39912a1fae37b5 *NEWS
+21110d7e10e356f008e58e1b0feb3959 *DESCRIPTION
+424725269f5cdb61a1b7544a825efd24 *NAMESPACE
+d7a5e96e2823a9c24d2e9da48b18fdfb *NEWS
 cd0e7c6adbb8579250a9d3e61f64aeda *R/bandwidth_CI.R
 ed3433840fbd29468aa2dfe4961e99fc *R/ci_ampi.R
 2a26f50b01d7443690622a2ef344a44a *R/ci_bod.R
@@ -16,6 +16,8 @@ c091cd24fb844a784727815d9ca0389a *R/ci_generalized_mean.R
 a2e70cca75f85981fd67c6d36b1ef882 *R/ci_geom_gen.R
 9e07ba37ec13abf4406bffb68ef26229 *R/ci_mean_min.R
 d3fe2f76905acf21500c73bab4f21f44 *R/ci_mpi.R
+aefaacb5ebc1a49fff4fc89bfc042381 *R/ci_ogwa.R
+be3e43539daf131ab3d120a69543af22 *R/ci_owa.R
 23eff360b0f86b80655ce3f36e6be58e *R/ci_rbod.R
 09106b03494858eac0553e4832dd8850 *R/ci_rbod_constr_bad.R
 5256dbb786a8ef42772500f87fa4c2a6 *R/ci_rbod_constr_bad_Q.R
@@ -28,12 +30,12 @@ ef50baeeb31973ae829fef6f148ce077 *build/vignette.rds
 804faf0b61bda4d347a9a18e1affe6f3 *data/BLI_2017.rda
 5fd8378783add0195ab29bf8d70d7970 *data/EU_2020.rda
 04de5c1e9e04e73502e6dc63f84a621d *data/EU_NUTS1.rda
-35b47011806ce4c79a32839f256d9c10 *data/data_HPI.rda
+0dac91971048a8ce0616872271c1c4b5 *data/data_HPI.rda
 5d7fddf40b8028617f9f815eefadb023 *inst/CITATION
 1fadc79d7ce69ba7e020288d9483a32d *inst/doc/Compind_vignette.pdf
 1deebd4d88f478be92e129de67aaa543 *inst/doc/Compind_vignette.pdf.asis
 645074dee70a87eb19d4d306129f7ae4 *man/BLI_2017.Rd
-074983ebf7f98d6a68cb11f8ce8f78f7 *man/Compind-package.Rd
+35f19266095b92439c20f2e5651ee577 *man/Compind-package.Rd
 d8581d7333d810491a2127dc9e919045 *man/EU_2020.Rd
 4509c87a5aef1fae74a7dcb3aee0a953 *man/EU_NUTS1.Rd
 72a4ec94a2a5567fafa44138cf365c88 *man/HPI_data.Rd
@@ -52,6 +54,8 @@ e5ffce21abe41d4295910936d9e04340 *man/ci_geom_bod_intertemp.Rd
 1a13b56ff24b1d9515341c57f38b27bf *man/ci_geom_gen.Rd
 6816c1e66c66aa98edd136d2d261b4f4 *man/ci_mean_min.Rd
 b04a8ebf90c9f3ab3b752d45fd429ac1 *man/ci_mpi.Rd
+02b29cc981656c622d9b2f36e0b71079 *man/ci_ogwa.Rd
+c9ac67e0d7b902b3281196aa189c4c59 *man/ci_owa.Rd
 72fe6f629521735b3a3e6e603056c626 *man/ci_rbod.Rd
 6bed74d9225045dff0e094730b3c2913 *man/ci_rbod_constr_bad.Rd
 08e656033c29656857effe1bfe63c0b1 *man/ci_rbod_constr_bad_Q.Rd

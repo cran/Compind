@@ -20,6 +20,10 @@ Daraio, C., Simar, L. (2005) "\emph{Introducing environmental variables in nonpa
 
 Fusco E. (2015) "\emph{Enhancing non compensatory composite indicators: A directional proposal}", European Journal of Operational Research, 242(2), 620-630.
 
+Fusco E. (2023) "\emph{Potential improvements approach in composite indicators construction: the Multi-directional Benefit of the Doubt model}", Socio-Economic Planning Sciences, vol. 85, 101447
+
+Fusco, E., Liborio, M.P., Rabiei-Dastjerdi, H., Vidoli, F., Brunsdon, C. and Ekel, P.I. (2023), Harnessing Spatial Heterogeneity in Composite Indicators through the Ordered Geographically Weighted Averaging (OGWA) Operator. Geographical Analysis. https://doi.org/10.1111/gean.12384
+
 R. Lahdelma, P. Salminen (2001) "\emph{SMAA-2: Stochastic multicriteria acceptability analysis for group decision making}", Operations Research, 49(3), pp. 444-454
 
 OECD (2008) "\emph{Handbook on constructing composite indicators: methodology and user guide}".

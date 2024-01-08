@@ -1,3 +1,12 @@
+Compind v3.0 (Release date: 2023-12-28)
+==============
+Changes:
+
+New functions:
+
+* ci_owa:  Ordered Weighted Average (OWA) 
+* ci_ogwa: Ordered Geographically Weighted Average (OGWA) 
+
 Compind v2.9 (Release date: 2023-11-14)
 ==============
 Changes:
