@@ -25,7 +25,7 @@ Fusco E. (2023) "\emph{Potential improvements approach in composite indicators c
 
 \author{Fusco E.}
 
-\seealso{ \code{\link{ci_bod_dir}}, \code{\link{mea}}}
+\seealso{ \code{\link{ci_bod_dir}}, \code{\link{ci_rbod_mdir}}}
 
 \examples{
 data(BLI_2017)

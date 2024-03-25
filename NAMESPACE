@@ -12,6 +12,7 @@ importFrom(boot, boot.ci)
 
 importFrom(nonparaeff, orderm)
 importFrom(nonparaeff, ar.dual.dea)
+importFrom(Rcompadre,mat_mean)
 
 import(Hmisc)
 import(MASS)
@@ -21,6 +22,7 @@ import(lpSolve)
 import(spdep)
 
 importFrom("stats", "var")
+importFrom("stats", "qt")
 importFrom("stats", "sd")
 importFrom("stats", "median")
 importFrom("stats", "runif")

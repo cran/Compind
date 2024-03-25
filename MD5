@@ -1,6 +1,6 @@
-21110d7e10e356f008e58e1b0feb3959 *DESCRIPTION
-424725269f5cdb61a1b7544a825efd24 *NAMESPACE
-d7a5e96e2823a9c24d2e9da48b18fdfb *NEWS
+2beb9b15eee8ec2bfb1da785b9f06f39 *DESCRIPTION
+e35a999043fb1e4573e707838f43645a *NAMESPACE
+f2f7554d142d9c20cd88805d3cf7f93d *NEWS
 cd0e7c6adbb8579250a9d3e61f64aeda *R/bandwidth_CI.R
 ed3433840fbd29468aa2dfe4961e99fc *R/ci_ampi.R
 2a26f50b01d7443690622a2ef344a44a *R/ci_bod.R
@@ -22,11 +22,12 @@ be3e43539daf131ab3d120a69543af22 *R/ci_owa.R
 09106b03494858eac0553e4832dd8850 *R/ci_rbod_constr_bad.R
 5256dbb786a8ef42772500f87fa4c2a6 *R/ci_rbod_constr_bad_Q.R
 ae28102c03b51d9d20492f886ec4046e *R/ci_rbod_dir.R
+f58ccf2ee597c114b1937f0978d89ebd *R/ci_rbod_mdir.r
 186f5e55551315302704951e8e9b0db0 *R/ci_rbod_spatial.R
 40ae0b086ec55e1ed4d428eeb74cdfcc *R/ci_smaa_constr.R
 bf6c1b7c2bf9fad44ea7b893bda9fc4d *R/ci_wroclaw.r
 0c12215de968087b67ffdcb664fbc921 *R/normalise_ci.R
-ef50baeeb31973ae829fef6f148ce077 *build/vignette.rds
+a41e0132092ade8274ae59d6b8ab3809 *build/vignette.rds
 804faf0b61bda4d347a9a18e1affe6f3 *data/BLI_2017.rda
 5fd8378783add0195ab29bf8d70d7970 *data/EU_2020.rda
 04de5c1e9e04e73502e6dc63f84a621d *data/EU_NUTS1.rda
@@ -45,7 +46,7 @@ dde2ca01d754bbd1b1e30630d53a6434 *man/ci_ampi.Rd
 e97c279036105d4036bbb589e7bf40f1 *man/ci_bod_constr.Rd
 00c63b899feb08ee6335c7c0b67a3a8e *man/ci_bod_constr_bad.Rd
 a6daefe2429957ad91a9fb2207f1bd5d *man/ci_bod_dir.Rd
-5af232ee7b30e57b0c00a952d7f8be47 *man/ci_bod_mdir.Rd
+a130e5f4b482c213a602899123aa647d *man/ci_bod_mdir.Rd
 ff10d3ab3d3d560608985165c519ce65 *man/ci_bod_var_w.Rd
 86af8f76839d31270a1fc6a66449293d *man/ci_factor.Rd
 ab05bf94910c1a485310bd30323f4a32 *man/ci_factor_mixed.Rd
@@ -60,6 +61,7 @@ c9ac67e0d7b902b3281196aa189c4c59 *man/ci_owa.Rd
 6bed74d9225045dff0e094730b3c2913 *man/ci_rbod_constr_bad.Rd
 08e656033c29656857effe1bfe63c0b1 *man/ci_rbod_constr_bad_Q.Rd
 d46d7bb1a17c7b12777fd917d5883a36 *man/ci_rbod_dir.Rd
+3fcb58178fa21f0ae7b652ea73d023d8 *man/ci_rbod_mdir.Rd
 42f461919fef66aa991787b9c452c202 *man/ci_rbod_spatial.Rd
 c069cb7868ff529befe42f3be96375a3 *man/ci_smaa_constr.Rd
 bde24d22ffafd7257d3d32f69eb0d898 *man/ci_wroclaw.Rd
