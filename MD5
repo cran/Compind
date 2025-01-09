@@ -1,8 +1,8 @@
-2beb9b15eee8ec2bfb1da785b9f06f39 *DESCRIPTION
+aff8a356695362c2fe0a49882c275258 *DESCRIPTION
 e35a999043fb1e4573e707838f43645a *NAMESPACE
-f2f7554d142d9c20cd88805d3cf7f93d *NEWS
+6643fe046a250cff157147e52ac31c56 *NEWS
 cd0e7c6adbb8579250a9d3e61f64aeda *R/bandwidth_CI.R
-ed3433840fbd29468aa2dfe4961e99fc *R/ci_ampi.R
+a9b4bdc1e2609f2787ebad440a5b1c06 *R/ci_ampi.R
 2a26f50b01d7443690622a2ef344a44a *R/ci_bod.R
 5cc62ec01051d1a8801c1e1bb0dcae1f *R/ci_bod_constr.R
 5591b6fa93d5d4dab28f6783bc24424e *R/ci_bod_constr_bad.R
@@ -27,7 +27,7 @@ f58ccf2ee597c114b1937f0978d89ebd *R/ci_rbod_mdir.r
 40ae0b086ec55e1ed4d428eeb74cdfcc *R/ci_smaa_constr.R
 bf6c1b7c2bf9fad44ea7b893bda9fc4d *R/ci_wroclaw.r
 0c12215de968087b67ffdcb664fbc921 *R/normalise_ci.R
-a41e0132092ade8274ae59d6b8ab3809 *build/vignette.rds
+b532ab6b433b79e0b85f2276c605a325 *build/vignette.rds
 804faf0b61bda4d347a9a18e1affe6f3 *data/BLI_2017.rda
 5fd8378783add0195ab29bf8d70d7970 *data/EU_2020.rda
 04de5c1e9e04e73502e6dc63f84a621d *data/EU_NUTS1.rda
@@ -41,7 +41,7 @@ d8581d7333d810491a2127dc9e919045 *man/EU_2020.Rd
 4509c87a5aef1fae74a7dcb3aee0a953 *man/EU_NUTS1.Rd
 72a4ec94a2a5567fafa44138cf365c88 *man/HPI_data.Rd
 c47be8889bf4d521f5e9c95b9578e61e *man/bandwidth_CI.Rd
-dde2ca01d754bbd1b1e30630d53a6434 *man/ci_ampi.Rd
+423f74094ee5ac117a2360dc7cd65b44 *man/ci_ampi.Rd
 49d6588d2c5ef923a679450625e7e30d *man/ci_bod.Rd
 e97c279036105d4036bbb589e7bf40f1 *man/ci_bod_constr.Rd
 00c63b899feb08ee6335c7c0b67a3a8e *man/ci_bod_constr_bad.Rd
