@@ -19,21 +19,19 @@
 \references{
 De Muro P., Mazziotta M., Pareto A. (2011), "\emph{Composite Indices of Development and Poverty: An Application to MDGs}", Social Indicators Research, Volume 104, Number 1, pp. 1-18.}
 
-\author{Vidoli F.}
+\author{Vidoli F., Scaccabarozzi A.}
 
 \seealso{ \code{\link{ci_bod}}, \code{\link{normalise_ci}}}
 
 \examples{
 data(EU_NUTS1)
 
-# Please, pay attention. MPI can be calculated only with two standardizations methods:
-# Classic MPI - method=1, z.mean=100 and z.std=10
-# Correct MPI - method=2
+# Please, pay attention. MPI can be calculated only with this standardization method:
+# method=1, z.mean=100 and z.std=10
 # For more info, please see references.
 
+data(EU_NUTS1)
 data_norm = normalise_ci(EU_NUTS1,c(2:3),c("NEG","POS"),method=1,z.mean=100, z.std=10)
 CI = ci_mpi(data_norm$ci_norm, penalty="NEG")
 
-data(EU_NUTS1)
-CI = ci_mpi(EU_NUTS1,c(2:3),penalty="NEG")
 }

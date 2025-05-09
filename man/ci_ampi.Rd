@@ -21,7 +21,7 @@
   \item{ci_norm}{List containing only the normalised indicators for each year.}
 }
 
-\details{Author thanks Leonardo Alaimo for their help and for making available the original code of the AMPI function. Federico Roscioli for his integrations to the original code and Viet Duong Nguyen for his correction to the code.}
+\details{Author thanks Leonardo Alaimo for their help and for making available the original code of the AMPI function. Federico Roscioli for his integrations to the original code.}
 
 \references{
 Mazziotta, M., Pareto, A. (2013) "\emph{A Non-compensatory Composite Index for Measuring Well-being over Time}", Cogito. Multidisciplinary Research Journal Vol. V, no. 4, pp. 93-104

@@ -22,7 +22,7 @@ ci_ampi <- function (x, indic_col, gp, time, polarity, penalty = "NEG")
     }
   }
   timef = levels(as.factor(time))
-  penaltyM <- matrix(0, nrow = (n_unit/length(timef)), ncol = length(timef))
+  penalty <- matrix(0, nrow = (n_unit/length(timef)), ncol = length(timef))
   norm <- list()
   ci_ampi_est <- matrix(0, nrow = (n_unit/length(timef)), ncol = length(timef))
   for (t in 1:length(timef)) {
@@ -55,13 +55,13 @@ ci_ampi <- function (x, indic_col, gp, time, polarity, penalty = "NEG")
     Ma_z <- apply(ci_norm, 1, mean)
     Sqm_z <- (apply(ci_norm, 1, function(x) {var(x)*(length(x)- 1)/length(x)}))^0.5
     cv = Sqm_z/Ma_z
-    penaltyM[,t] <- (Sqm_z * cv)
-    ifelse(penalty == "POS", ci_ampi_est[,t] <- round(Ma_z + penaltyM[,t], 3), ci_ampi_est[, t] <- round(Ma_z - penaltyM[,t], 3))
+    penalty[,t] <- (Sqm_z * cv)
+    ifelse(penalty == "POS", ci_ampi_est[,t] <- round(Ma_z + penalty[,t], 3), ci_ampi_est[, t] <- round(Ma_z - penalty[,t], 3))
   }
   ci_ampi_est <- as.data.frame(ci_ampi_est)
-  penaltyM <- as.data.frame(penaltyM)
+  penalty <- as.data.frame(penalty)
   colnames(ci_ampi_est) <- timef
-  r <- list(ci_ampi_est = ci_ampi_est, ci_method = "ampi", ci_penalty=penaltyM, ci_norm=norm)
+  r <- list(ci_ampi_est = ci_ampi_est, ci_method = "ampi", ci_penalty=penalty, ci_norm=norm)
   r$call <- match.call()
   class(r) <- "CI"
   return(r)

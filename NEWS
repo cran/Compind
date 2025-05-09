@@ -1,3 +1,12 @@
+Compind v3.3 (Release date: 2025-05-9)
+==============
+Changes:
+
+New functions:
+
+* ci_mpi.R: ATTENTION: This function has been rewritten and it is therefore necessary to normalise simple data BEFORE using the function; see the example in the help. 
+
+
 Compind v3.2 (Release date: 2025-1-9)
 ==============
 Changes:

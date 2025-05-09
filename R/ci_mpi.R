@@ -4,6 +4,11 @@ ci_mpi <- function(x, indic_col, penalty="POS")
   n_indic <- dim(as.matrix(x_num))[2]
   n_unit  <- dim(as.matrix(x_num))[1]
   
+  # Warning
+  
+  message("Pay attention: This function was rewritten in version 3.2 of this package; it is now necessary to normalise simple data BEFORE using the function; see the example in the help. ")
+ 
+  
   # Numeric check
   if (n_indic<2)
   {
@@ -34,20 +39,24 @@ ci_mpi <- function(x, indic_col, penalty="POS")
     
   
   #punto A
-  Ma <- colMeans(x_num) 
-  Sqm <- (apply(x_num,2,var))^0.5
-  S=10
-  M=100
-  z = ((x_num-Ma)/Sqm)*S + M
+  #Ma <- colMeans(x_num) 
+  #Sqm <- (apply(x_num,2,var))^0.5
+  #S=10
+  #M=100
+  #z = ((x_num-Ma)/Sqm)*S + M  
   
   #punto B
-  Ma_z <- apply(z,1,mean)
-  Sqm_z <- (apply(z,1,var))^0.5
+  #Ma_z <- apply(z,1,mean)
+  #Sqm_z <- (apply(z,1,var))^0.5
+  #cv = Sqm_z / Ma_z
+  
+  Ma_z <- apply(x_num,1,mean)
+  Sqm_z <- (apply(x_num,1,var))^0.5
   cv = Sqm_z / Ma_z
   
   #punto C
   if (penalty=="POS") {
-    ci_mpi_est <- Ma_z*(1-cv^2)
+    ci_mpi_est <- Ma_z*(1-cv^2) 
   } else {
     ci_mpi_est <- Ma_z*(1+cv^2)
   }
