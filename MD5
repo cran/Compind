@@ -1,6 +1,6 @@
-cc00ba1ad695e3ab549ac127d23ff046 *DESCRIPTION
-e35a999043fb1e4573e707838f43645a *NAMESPACE
-9c84d23359c7981554cd777da9d36b6a *NEWS
+e94b549360ff7f52a0f2557ecb222d99 *DESCRIPTION
+07e7363faec8c9fd9bca46bf52f249b9 *NAMESPACE
+f7e810a330f081e51fa2e5afd417eb77 *NEWS
 cd0e7c6adbb8579250a9d3e61f64aeda *R/bandwidth_CI.R
 ed3433840fbd29468aa2dfe4961e99fc *R/ci_ampi.R
 2a26f50b01d7443690622a2ef344a44a *R/ci_bod.R
@@ -22,11 +22,12 @@ be3e43539daf131ab3d120a69543af22 *R/ci_owa.R
 09106b03494858eac0553e4832dd8850 *R/ci_rbod_constr_bad.R
 5256dbb786a8ef42772500f87fa4c2a6 *R/ci_rbod_constr_bad_Q.R
 ae28102c03b51d9d20492f886ec4046e *R/ci_rbod_dir.R
-f58ccf2ee597c114b1937f0978d89ebd *R/ci_rbod_mdir.r
+858f303ddc7fa8fb2b8fee079feb9946 *R/ci_rbod_mdir.R
 186f5e55551315302704951e8e9b0db0 *R/ci_rbod_spatial.R
 40ae0b086ec55e1ed4d428eeb74cdfcc *R/ci_smaa_constr.R
 bf6c1b7c2bf9fad44ea7b893bda9fc4d *R/ci_wroclaw.r
 0c12215de968087b67ffdcb664fbc921 *R/normalise_ci.R
+93d7a94e65804951b72a2f30ce7c773e *R/plot_M_robust_ci.R
 b532ab6b433b79e0b85f2276c605a325 *build/vignette.rds
 804faf0b61bda4d347a9a18e1affe6f3 *data/BLI_2017.rda
 5fd8378783add0195ab29bf8d70d7970 *data/EU_2020.rda
@@ -61,9 +62,10 @@ c9ac67e0d7b902b3281196aa189c4c59 *man/ci_owa.Rd
 6bed74d9225045dff0e094730b3c2913 *man/ci_rbod_constr_bad.Rd
 08e656033c29656857effe1bfe63c0b1 *man/ci_rbod_constr_bad_Q.Rd
 d46d7bb1a17c7b12777fd917d5883a36 *man/ci_rbod_dir.Rd
-3fcb58178fa21f0ae7b652ea73d023d8 *man/ci_rbod_mdir.Rd
+3230395d41c8b6e5cfadee72350d0a11 *man/ci_rbod_mdir.Rd
 42f461919fef66aa991787b9c452c202 *man/ci_rbod_spatial.Rd
 c069cb7868ff529befe42f3be96375a3 *man/ci_smaa_constr.Rd
 bde24d22ffafd7257d3d32f69eb0d898 *man/ci_wroclaw.Rd
 6ca1b23e40ab812c2acf743743b65cda *man/normalise_ci.Rd
+e1990ec3d32ff088d65f348d630015d8 *man/plot_M_robust_ci.Rd
 1deebd4d88f478be92e129de67aaa543 *vignettes/Compind_vignette.pdf.asis

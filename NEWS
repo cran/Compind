@@ -1,3 +1,13 @@
+Compind v3.4 (Release date: 2025-05-15)
+==============
+Changes:
+
+New functions:
+
+* plot_M_robust_ci : Visualize the percentage of outperforming units in robust methods
+* ci_rbod_mdir: Internally improved function
+
+
 Compind v3.3 (Release date: 2025-05-9)
 ==============
 Changes:

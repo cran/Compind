@@ -1,8 +1,8 @@
 Package: Compind
 Type: Package
 Title: Composite Indicators Functions
-Version: 3.3
-Date: 2025-5-9
+Version: 3.4
+Date: 2025-5-15
 Authors@R: c(person(given = "Francesco",
                         family = "Vidoli",
                         role = c("aut", "cre"),
@@ -19,8 +19,8 @@ License: GPL-3
 Suggests: R.rsp
 VignetteBuilder: R.rsp
 NeedsCompilation: no
-Packaged: 2025-05-09 08:00:06 UTC; Fra
+Packaged: 2025-05-15 13:50:22 UTC; Fra
 Repository: CRAN
-Date/Publication: 2025-05-09 08:50:02 UTC
+Date/Publication: 2025-05-16 09:30:10 UTC
 Author: Francesco Vidoli [aut, cre],
   Elisa Fusco [aut]

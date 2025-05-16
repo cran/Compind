@@ -11,7 +11,6 @@
   \item{M}{The number of elements in each of the bootstrapped samples.}
   \item{B}{The number of bootstrap replicates.}
   \item{interval}{Desired probability for Student distribution [see function qt()]; default = 0.05.}
-
 }
 
 \value{An object of class "CI". This is a list containing the following elements:
@@ -35,5 +34,5 @@ F. Vidoli, E. Fusco, G. Pignataro, C. Guccio (2024) "\emph{Multi-directional Rob
 
 \examples{
 data(BLI_2017)
-CI <- ci_rbod_mdir(BLI_2017,c(2:12), M=10,B=20, interval=0.05)
+CI <- ci_rbod_mdir(BLI_2017,c(2:12), M=6,B=20, interval=0.05)
 }
