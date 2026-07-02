@@ -43,6 +43,7 @@ importFrom("GWmodel", "bw.gwss.average")
 
 importFrom("sp", "SpatialPointsDataFrame")
 importFrom("stats", "quantile")
+importFrom("stats", "ave")
 
 
 

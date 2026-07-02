@@ -1,9 +1,14 @@
+Compind v3.6 (Release date: 2026-07-2)
+==============
+Changes:
+New functions:
+* ci_bod_time_decomp.R : Dynamic Benefit of the Doubt decomposition for panel data 
+
+
 Compind v3.4 (Release date: 2025-05-15)
 ==============
 Changes:
-
 New functions:
-
 * plot_M_robust_ci : Visualize the percentage of outperforming units in robust methods
 * ci_rbod_mdir: Internally improved function
 
@@ -11,102 +16,88 @@ New functions:
 Compind v3.3 (Release date: 2025-05-9)
 ==============
 Changes:
-
 New functions:
-
 * ci_mpi.R: ATTENTION: This function has been rewritten and it is therefore necessary to normalise simple data BEFORE using the function; see the example in the help. 
 
 
 Compind v3.2 (Release date: 2025-1-9)
 ==============
 Changes:
-
 * ci_ampi: corrected internal errors
+
 
 Compind v3.1 (Release date: 2024-03-25)
 ==============
 Changes:
-
 New functions:
-
 * ci_rbod_mdir: Robust Multi-directional Benefit of the Doubt approach (MDRBoD)
 
 
 Compind v3.0 (Release date: 2023-12-28)
 ==============
 Changes:
-
 New functions:
-
 * ci_owa:  Ordered Weighted Average (OWA) 
 * ci_ogwa: Ordered Geographically Weighted Average (OGWA) 
+
 
 Compind v2.9 (Release date: 2023-11-14)
 ==============
 Changes:
-
 New function:
-
 * ci_factor_mixed: Weighting method based on Factor analysis of mixed data (FAMD)
+
 
 Compind v2.8 (Release date: 2023-08-20)
 ==============
 Changes:
-
 New function:
-
 * ci_bod_mdir: Multi-directional Benefit of the Doubt approach (MDBoD)
 
 
 Compind v2.7 (Release date: 2023-01-19)
 ==============
 Changes:
-
 * Some bugs have been fixed.
 
 
 Compind v2.6 (Release date: 2022-7-05)
 ==============
 Changes:
-
 * Solved problem in a linked package (nonparaeff). function ci_bod_var_w is now at your disposal
 
 
 Compind v2.5 (Release date: 2022-6-20)
 ==============
 Changes:
-
 * problem in a linked package (nonparaeff). Removed function ci_bod_var_w
+
 
 Compind v2.4 (Release date: 2022-5-24)
 ==============
 Changes:
-
 * problem in a linked package (smaa). This problem has been fixed.
+
 
 Compind v2.3 (Release date: 2021-4-09)
 ==============
 Changes:
-
 * ci_smaa_constr function example corrected
+
 
 Compind v2.2 (Release date: 2021-4-9)
 ==============
 Changes:
-
 * ci_ampi (Adjusted Mazziotta-Pareto Index (AMPI) method) function fixed: 
 	(1) negative penalty as default; 
 	(2) fixed, in the help, the explanation of the penalty that is = NEG for positive indicators and = POS for negative indicators (for example: deprivation);
 	(3) calculation of standard deviation divided by n (and not by n-1).
 
 
-
 Compind v2.0 (Release date: 2018-2-13)
 ==============
 Changes:
-
 New functions:
-
 * ci_bod_constr_bad: Constrained Benefit of the Doubt approach (BoD) in presence of undesirable  indicators
 * ci_rbod_constr_bad: Robust constrained Benefit of the Doubt approach (BoD) in presence of undesirable  indicators.
 * ci_rbod_constr_bad_Q: Conditional robust constrained Benefit of the Doubt approach (BoD) in presence of undesirable  indicators
