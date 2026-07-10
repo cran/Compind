@@ -1,6 +1,6 @@
-fec76b684cbd6caf43293f23417f2aee *DESCRIPTION
+268b4128b8a97286761b3de82af3c183 *DESCRIPTION
 ea2674b05e3ccb65ed80ec4c41ddc0f6 *NAMESPACE
-b9379c5b9a8072a65ad4e71b6d7e5495 *NEWS
+f8e6f8cba09a08cb87da5985381a591c *NEWS
 cd0e7c6adbb8579250a9d3e61f64aeda *R/bandwidth_CI.R
 ed3433840fbd29468aa2dfe4961e99fc *R/ci_ampi.R
 2a26f50b01d7443690622a2ef344a44a *R/ci_bod.R
@@ -34,11 +34,8 @@ b532ab6b433b79e0b85f2276c605a325 *build/vignette.rds
 5fd8378783add0195ab29bf8d70d7970 *data/EU_2020.rda
 04de5c1e9e04e73502e6dc63f84a621d *data/EU_NUTS1.rda
 0dac91971048a8ce0616872271c1c4b5 *data/data_HPI.rda
-3297acae6f930d68e2c46c84dec2d2f8 *data/desktop.ini
-3297acae6f930d68e2c46c84dec2d2f8 *desktop.ini
 5d7fddf40b8028617f9f815eefadb023 *inst/CITATION
-3297acae6f930d68e2c46c84dec2d2f8 *inst/desktop.ini
-6c12bd13d8c5c0c7272914dfe260e65d *inst/doc/Compind_vignette.pdf
+9e841166bbf29ba00bb8088afe3fa33f *inst/doc/Compind_vignette.pdf
 1deebd4d88f478be92e129de67aaa543 *inst/doc/Compind_vignette.pdf.asis
 645074dee70a87eb19d4d306129f7ae4 *man/BLI_2017.Rd
 35f19266095b92439c20f2e5651ee577 *man/Compind-package.Rd
@@ -64,7 +61,7 @@ e5ffce21abe41d4295910936d9e04340 *man/ci_geom_bod_intertemp.Rd
 02b29cc981656c622d9b2f36e0b71079 *man/ci_ogwa.Rd
 c9ac67e0d7b902b3281196aa189c4c59 *man/ci_owa.Rd
 72fe6f629521735b3a3e6e603056c626 *man/ci_rbod.Rd
-6bed74d9225045dff0e094730b3c2913 *man/ci_rbod_constr_bad.Rd
+51bb2b7ab69ee484b344bd164e72c114 *man/ci_rbod_constr_bad.Rd
 3e27ae5961a993760b6b009227e3e214 *man/ci_rbod_constr_bad_Q.Rd
 d46d7bb1a17c7b12777fd917d5883a36 *man/ci_rbod_dir.Rd
 3230395d41c8b6e5cfadee72350d0a11 *man/ci_rbod_mdir.Rd
@@ -74,4 +71,3 @@ bde24d22ffafd7257d3d32f69eb0d898 *man/ci_wroclaw.Rd
 6ca1b23e40ab812c2acf743743b65cda *man/normalise_ci.Rd
 e1990ec3d32ff088d65f348d630015d8 *man/plot_M_robust_ci.Rd
 1deebd4d88f478be92e129de67aaa543 *vignettes/Compind_vignette.pdf.asis
-3297acae6f930d68e2c46c84dec2d2f8 *vignettes/desktop.ini
