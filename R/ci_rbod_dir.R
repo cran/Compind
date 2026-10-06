@@ -4,7 +4,7 @@ ci_rbod_dir <- function (x, indic_col, M = 25, B = 500, dir)
  # require(lpSolve)
   dataset   = x[,indic_col]
   n_indic <- dim(dataset)[2]
-  n_unit <- dim(dataset)[2]
+  n_unit <- dim(dataset)[1]
   s <- dim(dataset)[2]
   m <- ncol(dataset) - s
   n <- nrow(dataset)
@@ -64,7 +64,8 @@ ci_rbod_dir <- function (x, indic_col, M = 25, B = 500, dir)
       dataset.idx.m  <-dataset.idx.y[sample(nrow(dataset.idx.y), M, replace = TRUE),-1]
       
       # distanza euclidea punto - m peers
-      mat <- as.matrix(dataset.idx.m/matrix(y0,nrow(dataset.idx.m),2,byrow=TRUE))
+      mat <- as.matrix(dataset.idx.m/matrix(y0,nrow(dataset.idx.m),s,byrow=TRUE))
+      mat[is.nan(mat)] <- Inf   # 0/0 (null direction or null value): not binding
       eff[b] <- max(apply(mat, 1, min)) 
       
     }

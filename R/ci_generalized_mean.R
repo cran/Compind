@@ -29,15 +29,19 @@ ci_generalized_mean <- function(x, indic_col, p, na.rm=TRUE)
   
     
   
-  t_x = t(x_num)
+  # Generalized (power) mean: M_p = ( 1/n * sum(I^p) )^(1/p)
+  # p = 0 is the limit case (geometric mean)
+  x_mat = as.matrix(x_num)
   
-  if (!na.rm) {
-    x_elev_p = x_num^p
-    sum_p = apply(x_elev_p,1,sum)
-    ci_generalized_mean_est = (1/n_indic*sum_p)^1/p
-    
+  if (p <= 0 && any(x_mat <= 0, na.rm = TRUE))
+  {
+    stop("With p <= 0 simple indicators must be strictly positive!")
+  }
+  
+  if (p == 0) {
+    ci_generalized_mean_est = exp(rowMeans(log(x_mat), na.rm = na.rm))
   } else {
-    ci_generalized_mean_est <- 1 #### CAMBIARE
+    ci_generalized_mean_est = (rowMeans(x_mat^p, na.rm = na.rm))^(1/p)
   }
   
   r<-list(ci_generalized_mean_est=ci_generalized_mean_est, ci_method="generalized_mean")

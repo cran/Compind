@@ -26,6 +26,7 @@ The \emph{generalized mean} with the exponent \eqn{p} can be espressed as:
 Particular case are:
 \eqn{p=-\infty}: minimum, \eqn{p=-1}: harmonic mean, \eqn{p=0}: geometric mean, 
 \eqn{p=1}: arithmetic mean, \eqn{p=2}: root-mean-square and \eqn{p=\infty}: maximum.
+With \eqn{p \le 0} simple indicators must be strictly positive.
 }
 
 \author{
@@ -41,5 +42,6 @@ Indic = data.frame(i1, i2)
 CI = ci_generalized_mean(Indic, p=-1) # harmonic mean
 
 data(EU_NUTS1)
-CI = ci_generalized_mean(EU_NUTS1,c(2:3),p=2) # geometric mean
+CI = ci_generalized_mean(EU_NUTS1,c(2:3),p=2) # quadratic mean (root-mean-square)
+CI = ci_generalized_mean(EU_NUTS1,c(2:3),p=0) # geometric mean
 }

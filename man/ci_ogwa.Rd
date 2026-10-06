@@ -64,6 +64,7 @@ atleast = 2
 
 coord = Indic_CI[,c("lat","long")]
 
+\donttest{
 CI_ogwa_n = ci_ogwa(Indic_CI, id="ISO", 
                       indic_col=c(1:3), 
                       atleastjp=atleast,
@@ -71,6 +72,7 @@ CI_ogwa_n = ci_ogwa(Indic_CI, id="ISO",
                       kernel = "gaussian",
                       adaptive=FALSE, 
                       longlat=FALSE)$CI_OGWA_n
+}
 
 
 #CI_ogwa_p = ci_ogwa(Indic_CI, id="ISO", 

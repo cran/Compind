@@ -38,7 +38,7 @@ ci_bod_var_w <- function(x,indic_col,boot_rep = 5000)
   high_var = matrix(0, nrow=n_indic, ncol=1)
   for (i in seq(1,n_indic)) 
   {
-    bootcorr <- boot(x_num[,i], var, R=boot_r)
+    bootcorr <- boot(x_num[,i], function(d, idx) var(d[idx]), R=boot_r)
     interv_var = boot.ci(bootcorr, conf = 0.95, type="norm")
     low_var[i]  = interv_var$normal[2]
     high_var[i] = interv_var$normal[3]

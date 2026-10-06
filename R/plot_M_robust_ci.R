@@ -41,13 +41,22 @@ plot_M_robust_ci <- function(x,indic_col,method,mvector,B,dir,interval=NULL)
     }
     if(method=="rbod_mdir")
     {
-      scores <- ci_rbod_mdir(ci_data, M=mvector[m],B=B,interval=interval)$ci_rbod_mdir_est
-      msuper[m,1] <- length(scores[scores > 1])/nrow(ci_data)
+      if (is.null(interval)) interval <- 0.05
+      scores <- ci_rbod_mdir(x, indic_col, M=mvector[m],B=B,interval=interval)$ci_rbod_mdir_est
+      # MDir_RBoD scores are bounded by 1: share of units on the robust frontier
+      msuper[m,1] <- length(scores[scores >= 1 - 1e-6])/nrow(ci_data)
     }
   }
   
-  plot(x = mvector, y = msuper[, 1], type = "b", lwd = 2, main = "Percentage of outperforming units by subset size M", 
-       xlab = c("M"), ylab = c("% of outperforming units"), 
+  if (method == "rbod_mdir") {
+    main_lab <- "Percentage of units on the robust frontier by subset size M"
+    y_lab    <- "% of units with score = 1"
+  } else {
+    main_lab <- "Percentage of outperforming units by subset size M"
+    y_lab    <- "% of outperforming units"
+  }
+  plot(x = mvector, y = msuper[, 1], type = "b", lwd = 2, main = main_lab, 
+       xlab = c("M"), ylab = y_lab, 
        ylim = c(min(msuper), max(msuper)))
   graphics::lines(x = mvector, y = msuper[, 1], type = "b", 
                   lwd = 2)
